@@ -1,0 +1,200 @@
+.featured{  
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../assets/imgs/featured.jpg);
+    height: 88vh;
+}
+
+.featured--vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured--horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
+
+.featured--name {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.featured--info {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+
+}
+
+.featured--points, 
+.featured--year, 
+.featured--seasons {
+    margin-right: 15px;
+}
+
+.featured--points {
+    color: #46d369;
+}
+
+.featured--description {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.featured--buttons {
+    margin-top: 15px;
+    display: flex;
+}
+
+.featured--watchbutton, 
+.featured--mylistbutton {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all ease 0.2s;
+}
+
+.featured--watchbutton:hover, 
+.featured--mylistbutton:hover {
+    opacity: 0.7;
+}
+
+.featured--watchbutton {
+    background-color: #FFF;
+    color: #000;
+}
+
+.featured--mylistbutton  {
+    background-color: #333;
+    color: #FFF;
+}
+
+.featured--genres {
+    display: flex;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+@media screen and (max-width: 760px) {
+    .featured--name {
+        font-size: 40px;
+    }
+
+    .featured--info {
+        font-size: 16px;
+    }
+
+    .featured--description {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .featured--mylistbutton,
+    .featured--watchbutton {
+        font-size: 16px;
+    }
+
+    .featured--genres {
+        font-size: 14px;
+    }
+
+    .movieList--left,
+    .movieList--right {
+        opacity: 1;
+    }
+}
+
+.movieList {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.movieList--first {
+    margin-top: -120px;
+}
+
+.movieList--h2  {
+    margin: 0px 0px 0px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.movieList--area {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.movieList--list {
+    display: flex;
+    transition: all  ease 0.3s;
+    
+}
+
+.movieList--item {
+    cursor: pointer;
+}
+
+.movieList--item img{
+    width: 150px;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.movieList--item img:hover{
+    transform: scale(1);
+}
+
+.movieList--left,
+.movieList--right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+
+
+.movieList--left {
+    left: 0;
+}
+
+.movieList--right {
+    right: 0;
+}
+
+.movieList:hover .movieList--left,
+.movieList:hover .movieList--right {
+    opacity: 1;
+}
+
+.fa-solid {
+    font-size: 1000px;
+}

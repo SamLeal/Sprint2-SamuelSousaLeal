@@ -1,0 +1,34 @@
+* {
+  background-color: black;
+}
+
+.container {
+  margin: 50vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__button{
+  background-color: rgb(255, 255, 255);
+  
+  margin-top: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.header__button--entrar{
+  margin-right: 1rem;
+}
+
+.header__button:hover {
+  background-color: rgb(205, 197, 197);
+  cursor: pointer;
+}
+
+a{
+  background-color: white;
+  padding: 50px 100px;
+  border-radius: 30px;
+}
