@@ -3,4 +3,6 @@
   Na pasta assets, encontra-se o css global do site, além das imagens utilizadas no mesmo.
 
   Há também, essa pasta acompanha um documendo com a Orientação da Avaliacão, onde mostra os layouts separados como exemplo.
+
+  Link do site online: https://samleal.github.io/Sprint2-SamuelSousaLeal/
     
